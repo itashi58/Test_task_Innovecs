@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="WeatherParamType" parent="Widget.AppCompat.TextView">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_size_weather_param</item>
+        <item name="android:layout_marginTop">@dimen/default_view_margin</item>
+        <item name="android:layout_marginStart">@dimen/default_view_margin</item>
+        <item name="android:layout_marginEnd">@dimen/default_view_margin</item>
+
+    </style>
+
+    <style name="WeatherParamTypeValue" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/text_size_weather_param</item>
+        <item name="android:layout_marginStart">@dimen/default_view_margin</item>
+
+    </style>
+
+</resources>

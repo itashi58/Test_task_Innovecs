@@ -4,7 +4,11 @@ plugins {
 }
 
 android {
-    compileSdk 30
+    compileSdk 31
+
+    buildFeatures  {
+        viewBinding true
+    }
 
     defaultConfig {
         applicationId "com.example.test_task_innovecs"
@@ -36,6 +40,7 @@ dependencies {
     implementation 'androidx.core:core-ktx:1.6.0'
     implementation 'androidx.appcompat:appcompat:1.4.0'
     implementation 'com.google.android.material:material:1.4.0'
+    implementation 'com.google.android.material:material:1.5.0-rc01'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'

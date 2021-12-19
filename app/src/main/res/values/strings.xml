@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Test_task_Innovecs</string>
+    <string name="choose_location">Choose location</string>
+    <string name="temperature">Temperature: </string>
+    <string name="feels_like">Feels like: </string>
+    <string name="humidity">Humidity: </string>
+    <string name="weather">Weather: </string>
+    <string name="get_forecast">Get forecast</string>
+
+    <string-array name="cities">
+        <item>My current location</item>
+        <item>London</item>
+        <item>Kiev</item>
+        <item>Tokyo</item>
+        <item>Paris</item>
+        <item>Istanbul</item>
+    </string-array>
 </resources>
