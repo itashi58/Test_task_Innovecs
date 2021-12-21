@@ -1,14 +1,29 @@
 <resources>
-    <string name="app_name">Test_task_Innovecs</string>
+    <string name="app_name">Test task Innovecs</string>
+    <string name="main_label">Get Weather</string>
     <string name="choose_location">Choose location</string>
     <string name="temperature">Temperature: </string>
     <string name="feels_like">Feels like: </string>
     <string name="humidity">Humidity: </string>
     <string name="weather">Weather: </string>
     <string name="get_forecast">Get forecast</string>
+    <string name="current_location">Current Location</string>
+    <string name="location_lat_lon">lat: %1$s lon: %2$s</string>
+    <string name="temp_celsius">%s °</string>
+    <string name="humidity_percent">%s %%</string>
 
-    <string-array name="cities">
-        <item>My current location</item>
+
+
+    <string-array name="cities_with_location">
+        <item>@string/current_location</item>
+        <item>London</item>
+        <item>Kiev</item>
+        <item>Tokyo</item>
+        <item>Paris</item>
+        <item>Istanbul</item>
+    </string-array>
+
+    <string-array name="cities_without_location">
         <item>London</item>
         <item>Kiev</item>
         <item>Tokyo</item>

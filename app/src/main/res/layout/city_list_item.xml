@@ -1,4 +1,5 @@
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.textview.MaterialTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/dropDownView"
     android:id="@+id/textView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"

@@ -3,4 +3,5 @@
     <dimen name="default_view_margin">16dp</dimen>
     <dimen name="small_view_margin">8dp</dimen>
     <dimen name="text_size_weather_param">24sp</dimen>
+    <dimen name="default_text_size">14sp</dimen>
 </resources>

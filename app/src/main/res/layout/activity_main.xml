@@ -6,8 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/locationTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_view_margin"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="location" />
+
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout"
+        android:id="@+id/cityChooserTil"
         style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,7 +27,8 @@
         android:layout_marginEnd="@dimen/small_view_margin"
         android:hint="@string/choose_location"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locationTv">
 
         <com.google.android.material.textfield.MaterialAutoCompleteTextView
             android:id="@+id/cityChooserAuto"
@@ -27,14 +39,14 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/materialButton"
+        android:id="@+id/getForecastBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/small_view_margin"
         android:text="@string/get_forecast"
-        app:layout_constraintEnd_toEndOf="@+id/textInputLayout"
-        app:layout_constraintStart_toStartOf="@+id/textInputLayout"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+        app:layout_constraintEnd_toEndOf="@+id/cityChooserTil"
+        app:layout_constraintStart_toStartOf="@+id/cityChooserTil"
+        app:layout_constraintTop_toBottomOf="@+id/cityChooserTil" />
 
     <!-- region temperature -->
     <com.google.android.material.textview.MaterialTextView
@@ -44,7 +56,7 @@
         android:layout_height="wrap_content"
         android:text="@string/temperature"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialButton" />
+        app:layout_constraintTop_toBottomOf="@+id/getForecastBtn" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/temperatureValueTv"
